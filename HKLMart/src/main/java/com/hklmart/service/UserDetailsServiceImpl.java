@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class UserDetailsServiceImpl implements UserDetailsService {
 
     private final MemberDAO member;
- 
+
     public UserDetailsServiceImpl(MemberDAO mapper) {
         this.member = mapper;
     }
