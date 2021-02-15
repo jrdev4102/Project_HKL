@@ -11,7 +11,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     private final MemberDAO member;
     
     public UserDetailsServiceImpl(MemberDAO mapper) {
-        this.member = mapper;
+        this.member =  mapper;
     }
 
     @Override
