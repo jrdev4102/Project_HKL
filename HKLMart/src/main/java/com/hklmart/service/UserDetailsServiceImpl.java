@@ -17,7 +17,11 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String memberId) {
         UserDetailsVO userDetails = member.getMemberInfo(memberId);
-        if (userDetails == null) { return null; }
+        
+        if (userDetails == null) {
+            return null;
+        }
+        
         else {
             userDetails.setUsername(userDetails.getMemberId());
             userDetails.setPassword(userDetails.getMemberPw());
